@@ -2,10 +2,22 @@ ul {
     padding-left: 0; 
 }
 
-li button {
-    margin-left: 5px; 
-    vertical-align: middle; 
+#lista-tarefas li button {
+    background-color: red; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto branco */
+    border: 2px solid black; /* Contorno preto com largura de 2px */
+    border-radius: 5px; /* Bordas curvas */
+    padding: 5px 10px; /* Preenchimento interno */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+    background-image: url('img/garbage.png'); /* Adiciona a imagem de lixo */
+    background-size: 20px; /* Define o tamanho da imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    width: 30px; /* Define a largura do botão */
+    height: 30px; /* Define a altura do botão */
+    font-size: 0; /* Oculta o texto dentro do botão */
 }
+
 
 li input[type="checkbox"] {
     margin-right: 5px;
@@ -30,16 +42,15 @@ header {
     margin-bottom: 20px; /* Espaço entre o cabeçalho e o campo de entrada */
 }
 
-#lista-tarefas {
-    list-style-type: none;
-    padding: 0;
-    display: flex; /* Adiciona display flex para centralizar horizontalmente */
-    flex-direction: column; /* Altera a direção do flexbox para coluna */
-    align-items: center; /* Centraliza verticalmente */
+#lista-tarefas li {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+    display: flex; /* Usa flexbox para alinhar os elementos */
+    align-items: center; /* Alinha verticalmente os itens */
 }
 
-#lista-tarefas li {
-    text-align: center; /* Centraliza o texto */
+#lista-tarefas li input[type="checkbox"] {
+    margin-right: 5px; /* Adiciona margem à direita dos checkboxes */
 }
 
 #lista-tarefas li input[type="checkbox"] {
