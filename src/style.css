@@ -16,3 +16,32 @@ li objeto {
     width: 200px; 
     overflow-wrap: break-word; 
 }
+
+body {
+    display: flex;
+    flex-direction: column; /* Altera a direção do flexbox para coluna */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px; /* Espaço entre o cabeçalho e o campo de entrada */
+}
+
+#lista-tarefas {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Adiciona display flex para centralizar horizontalmente */
+    flex-direction: column; /* Altera a direção do flexbox para coluna */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+#lista-tarefas li {
+    text-align: center; /* Centraliza o texto */
+}
+
+#lista-tarefas li input[type="checkbox"] {
+    margin-right: 10px;
+}
