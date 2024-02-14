@@ -1,3 +1,15 @@
+header h1 {
+    font-size: 2.5rem; /* Tamanho da fonte grande */
+    color: #333; /* Cor do texto */
+    text-align: center; /* Alinhamento central */
+    margin: 0; /* Remover margens padrão */
+    padding: 20px 0; /* Adicionar preenchimento acima e abaixo do título */
+    text-transform: uppercase; /* Transformar o texto em maiúsculas */
+    letter-spacing: 2px; /* Espaçamento entre as letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto para realce */
+    font-family: Arial, sans-serif; /* Fonte da família Arial */
+}
+
 #lista-tarefas {
     padding-left: 0; 
 }
