@@ -16,13 +16,21 @@ document.addEventListener('DOMContentLoaded', function () {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
 
-        const spanAtividade = document.createElement('objeto');
+        const spanAtividade = document.createElement('span');
         spanAtividade.textContent = atividade;
 
         const btnRemover = document.createElement('button');
         btnRemover.textContent = 'X';
         btnRemover.addEventListener('click', function () {
             li.remove();
+        });
+
+        checkbox.addEventListener('change', function () {
+            if (checkbox.checked) {
+                spanAtividade.style.textDecoration = 'line-through';
+            } else {
+                spanAtividade.style.textDecoration = 'none';
+            }
         });
 
         li.appendChild(checkbox);

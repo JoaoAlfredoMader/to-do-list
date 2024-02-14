@@ -1,58 +1,53 @@
-ul {
+#lista-tarefas {
     padding-left: 0; 
 }
 
 #lista-tarefas li button {
-    background-color: red; /* Cor de fundo vermelha */
-    color: white; /* Cor do texto branco */
-    border: 2px solid black; /* Contorno preto com largura de 2px */
-    border-radius: 5px; /* Bordas curvas */
-    padding: 5px 10px; /* Preenchimento interno */
-    cursor: pointer; /* Altera o cursor ao passar por cima */
-    background-image: url('img/garbage.png'); /* Adiciona a imagem de lixo */
-    background-size: 20px; /* Define o tamanho da imagem */
-    background-repeat: no-repeat; /* Impede a repetição da imagem */
-    background-position: center; /* Centraliza a imagem */
-    width: 30px; /* Define a largura do botão */
-    height: 30px; /* Define a altura do botão */
-    font-size: 0; /* Oculta o texto dentro do botão */
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-image: url('img/garbage.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
 }
 
-
-li input[type="checkbox"] {
+#lista-tarefas li input[type="checkbox"] {
     margin-right: 5px;
+    width: 30px; /* Mesma largura do botão de excluir */
+    height: 30px; /* Mesma altura do botão de excluir */
+    border: 2px solid black;
+    border-radius: 5px;
 }
-
-li objeto {
-    display: inline-block; 
-    width: 200px; 
-    overflow-wrap: break-word; 
+#lista-tarefas li span {
+    display: inline-block;
+    width: 200px;
+    overflow-wrap: break-word;
+    font-size: 16px;
 }
 
 body {
     display: flex;
-    flex-direction: column; /* Altera a direção do flexbox para coluna */
-    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
     margin: 0;
 }
 
 header {
     text-align: center;
-    margin-bottom: 20px; /* Espaço entre o cabeçalho e o campo de entrada */
+    margin-bottom: 20px;
 }
 
 #lista-tarefas li {
-    list-style: none; /* Remove os marcadores padrão da lista */
-    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
-    display: flex; /* Usa flexbox para alinhar os elementos */
-    align-items: center; /* Alinha verticalmente os itens */
-}
-
-#lista-tarefas li input[type="checkbox"] {
-    margin-right: 5px; /* Adiciona margem à direita dos checkboxes */
-}
-
-#lista-tarefas li input[type="checkbox"] {
-    margin-right: 10px;
+    list-style: none;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
