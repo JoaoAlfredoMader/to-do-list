@@ -1,15 +1,15 @@
 header h1 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 2.5rem; /* Tamanho da fonte grande */
-    color: #000000; /* Cor do texto */
-    text-align: center; /* Alinhamento central */
-    margin: 0; /* Remover margens padrão */
-    padding: 20px 0; /* Adicionar preenchimento acima e abaixo do título */
-    text-transform: uppercase; /* Transformar o texto em maiúsculas */
-    letter-spacing: 2px; /* Espaçamento entre as letras */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto para realce */
-    font-family: Arial, sans-serif; /* Fonte da família Arial */
+    font-size: 2.5rem; 
+    color: #000000; 
+    text-align: center; 
+    margin: 0; 
+    padding: 20px 0;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    font-family: Arial, sans-serif;
 }
 
 #lista-tarefas {
@@ -34,8 +34,8 @@ header h1 {
 
 #lista-tarefas li input[type="checkbox"] {
     margin-right: 5px;
-    width: 30px; /* Mesma largura do botão de excluir */
-    height: 30px; /* Mesma altura do botão de excluir */
+    width: 30px; 
+    height: 30px; 
     border: 2px solid black;
     border-radius: 5px;
 }
@@ -52,9 +52,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(to bottom, #bee3bf, #acd2f1); /* Gradiente linear de duas cores */
-    margin: 0; /* Remova as margens padrão */
-    padding: 0; /* Remova os preenchimentos padrão */
+    background: linear-gradient(to bottom, #bee3bf, #acd2f1); 
+    margin: 0; 
+    padding: 0;
 }
 
 #lista-tarefas li {
@@ -62,4 +62,22 @@ body {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
+}
+
+div {
+    margin-top: 20px;
+}
+
+.input-group {
+    display: flex; /* Usar flexbox */
+    align-items: center; /* Alinhar itens verticalmente */
+    justify-content: center; /* Centralizar no eixo x */
+
+}
+
+/* Estilo para o input de texto */
+#atividade {
+    flex: 0 0 220px; /* Largura fixa de 200px */
+    margin-right: 5px; /* Espaçamento entre o input e o botão */
+    height: 40px; /* Altura do input de texto */
 }
