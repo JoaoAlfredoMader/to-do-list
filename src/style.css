@@ -1,6 +1,8 @@
 header h1 {
+    text-align: center;
+    margin-bottom: 20px;
     font-size: 2.5rem; /* Tamanho da fonte grande */
-    color: #333; /* Cor do texto */
+    color: #000000; /* Cor do texto */
     text-align: center; /* Alinhamento central */
     margin: 0; /* Remover margens padrão */
     padding: 20px 0; /* Adicionar preenchimento acima e abaixo do título */
@@ -50,11 +52,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 20px;
+    background: linear-gradient(to bottom, #bee3bf, #acd2f1); /* Gradiente linear de duas cores */
+    margin: 0; /* Remova as margens padrão */
+    padding: 0; /* Remova os preenchimentos padrão */
 }
 
 #lista-tarefas li {
