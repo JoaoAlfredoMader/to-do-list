@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (atividade !== '') {
             adicionarTarefa(atividade);
             inputAtividade.value = '';
+        } else {
+            alert("Digite ao menos um caractere para adicionar")
         }
     });
 
