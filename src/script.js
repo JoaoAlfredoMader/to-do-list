@@ -17,19 +17,17 @@ document.addEventListener('DOMContentLoaded', function () {
         const li = document.createElement('li');
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
-    
         const spanAtividade = document.createElement('span');
         spanAtividade.textContent = atividade;
-    
         const btnRemover = document.createElement('button');
         btnRemover.textContent = 'X';
         btnRemover.addEventListener('click', function () {
             const confirmacao = confirm('Tem certeza que deseja excluir esta atividade?');
             if (confirmacao) {
                 li.remove();
+                atualizarContador();
             }
         });
-    
         checkbox.addEventListener('change', function () {
             if (checkbox.checked) {
                 spanAtividade.style.textDecoration = 'line-through';
@@ -37,11 +35,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 spanAtividade.style.textDecoration = 'none';
             }
         });
-    
         li.appendChild(checkbox);
         li.appendChild(spanAtividade);
         li.appendChild(btnRemover);
         listaTarefas.appendChild(li);
+        atualizarContador();
     }
+    
+    function atualizarContador() {
+        const contador = document.getElementById('contador-tarefas');
+        const totalTarefas = document.querySelectorAll('#lista-tarefas li').length;
+        contador.textContent = `${totalTarefas} ${totalTarefas !== 1 ? '' : ''}`;
+    }
+    
     
 });

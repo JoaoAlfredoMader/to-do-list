@@ -69,15 +69,22 @@ div {
 }
 
 .input-group {
-    display: flex; /* Usar flexbox */
-    align-items: center; /* Alinhar itens verticalmente */
-    justify-content: center; /* Centralizar no eixo x */
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 
 }
 
-/* Estilo para o input de texto */
 #atividade {
-    flex: 0 0 220px; /* Largura fixa de 200px */
-    margin-right: 5px; /* Espaçamento entre o input e o botão */
-    height: 40px; /* Altura do input de texto */
+    flex: 0 0 220px; 
+    margin-right: 5px; 
+    height: 40px; 
+}
+
+#contador-tarefas {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 4rem;
+    color: red;
 }
